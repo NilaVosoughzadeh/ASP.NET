@@ -1,0 +1,40 @@
+﻿@model StronglyType.Models.Person
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+<form action="/Home/Edit" method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <dl class="dl-horizontal">
+        <dt>
+            Name :
+        </dt>
+        <dd>
+            <input type="text" class="form-control" name="Name" value="@Model.Name"/>
+        </dd>
+
+        <dt>
+            Family :
+        </dt>
+        <dd>
+            <input type="text" class="form-control" name="Family" value="@Model.Family" />
+        </dd>
+
+        <dt>
+            Age :
+        </dt>
+        <dd>
+            <input type="text" class="form-control" name="Age" value="@Model.Age" />
+        </dd>
+
+        <dt>
+
+        </dt>
+        <dd>
+            <input type="submit" class="btn btn-warning" value="Edit" />
+        </dd>
+    </dl>
+</form>
