@@ -1,0 +1,40 @@
+# Visual Studio specific files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+Debug/
+Release/
+
+# NuGet Packages
+*.nupkg
+packages/
+project.lock.json
+project.assets.json
+*.nuspec
+.nuget/
+
+# Entity Framework
+migrations/
+
+# Logs & Database
+*.log
+logs/
+App_Data/
+
+# ASP.NET specific
+wwwroot/node_modules/
+wwwroot/lib/
+
+# IDE & Code Editors
+.idea/
+.vscode/
+*.code-workspace
+
+# Publish output
+publish/
