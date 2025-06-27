@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Test</title>
+</head>
+<body>
+    <div> 
+        <ul>
+            @for(int i = 1; i<=ViewBag.id; i++)
+            {
+                <li>Item @i</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>
