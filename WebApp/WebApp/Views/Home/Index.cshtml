@@ -1,0 +1,54 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>Page 1</h1>
+
+        @Html.ActionLink("Contact Us", "ContactUs", "Home") <br />
+        @Html.ActionLink("About Us", "AboutUs", "Home") <hr />
+
+        @DateTime.Now
+        @{
+            int a = 2;
+            int b = 3;
+            int c = a + b;
+        }
+        <h3>@c</h3>
+
+        <ul>
+            @{
+                for (int i = 1; i <= 5; i++)
+                {
+                    <li>@i</li>
+                }
+
+            }
+        </ul>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Family</th>
+            </tr>
+
+            @for (int i = 1; i <= 10; i++)
+            {
+                <tr>
+                    <td>Nila@(i)</td>
+                    <td>Vo@(i)</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
