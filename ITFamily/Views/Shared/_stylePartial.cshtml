@@ -1,0 +1,17 @@
+﻿<link rel="stylesheet" href="/website/styles/app.css">
+<link rel="icon" href="/website/favicon.ico" type="image/x-icon">
+
+<!-- link -->
+<link rel="stylesheet" href="/website/styles/swiper.css">
+<!-- ==========================  DARK MODE SCRIPT ============================= -->
+<script type="text/javascript">
+    if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+        document.documentElement.classList.add("dark");
+    } else {
+        document.documentElement.classList.remove("dark");
+    }
+</script>
