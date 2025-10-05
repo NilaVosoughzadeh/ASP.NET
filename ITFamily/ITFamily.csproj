@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Entities\" />
     <Folder Include="Models\DTOs\" />
     <Folder Include="Models\ViewModels\" />
     <Folder Include="Areas\" />
