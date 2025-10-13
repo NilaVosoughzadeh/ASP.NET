@@ -16,10 +16,10 @@ namespace ITFamily.Models.Entities.Product
 
         [Display(Name = "قیمت (تومان)")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
-        public float? Price{ get; set; }
+        public float? Price { get; set; }
 
         [Display(Name = "درصد تخفیف")]
-        public int? Off{ get; set; }
+        public int? Off { get; set; }
 
         [Display(Name = "توضیحات محصول")]
         public string? ProductDescription { get; set; }
@@ -28,6 +28,6 @@ namespace ITFamily.Models.Entities.Product
         public int? CategoryRefId { get; set; }
 
         [ForeignKey("CategoryRefId")]
-        public virtual ProductCategory? Category{ get; set; }
+        public virtual ProductCategory? Category { get; set; }
     }
 }
