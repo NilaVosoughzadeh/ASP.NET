@@ -3,13 +3,13 @@
 <html lang="en" dir="rtl">
 
 <head>
-    
+
     <title>
         @ViewData["Title"]
     </title>
 
-    <partial name="_metatagPartial"/>
-    <partial name="_stylePartial"/>
+    <partial name="_metatagPartial" />
+    <partial name="_stylePartial" />
 </head>
 
 <body>
@@ -220,23 +220,23 @@
 
     </svg>
 
-    
+
     <partial name="_headerPartial" />
 
     <!-- Main -->
     <main class="relative">
         @RenderBody()
 
-       </main>
+    </main>
 
     <!-- Footer -->
-  <partial name="_footerPartial"/>
+    <partial name="_footerPartial" />
 
     <!-- Overlay -->
     <div class="overlay"></div>
     <div class="search-overlay"></div>
     <partial name="_scriptPartial" />
-   
+
 </body>
 
 </html>
